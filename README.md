@@ -16,6 +16,8 @@
 
 Connections in this iteration allow button to tick up number on display 0-9
 
+TODO: Add pic you took on iphone 
+
 ## References
 
 - [Arduino Push Button](https://roboticsbackend.com/arduino-push-button-tutorial/)
