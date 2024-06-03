@@ -13,3 +13,10 @@
 | Arduino | D13 | 8X8 | CLK |
 | Arduino | D12 | Button | Right |
 | Breadboard | Blue Rail | Button | Left |
+
+Connections in this iteration allow button to tick up number on display 0-9
+
+## References
+
+- [Arduino Push Button](https://roboticsbackend.com/arduino-push-button-tutorial/)
+- [Arduino Max7219 Dot Matrix LED](https://www.makerguides.com/max7219-led-dot-matrix-display-arduino-tutorial/)
