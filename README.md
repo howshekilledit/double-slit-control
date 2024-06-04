@@ -1,5 +1,11 @@
 # Double Slit Controller
 
+## Components 
+
+- Arduino Uno
+- Max7219 8X8 LED
+- Push Button
+
 ## Connections
 
 | Component | Pin | Component | Pin |
@@ -17,6 +23,7 @@
 Connections in this iteration allow button to tick up number on display 0-9
 
 TODO: Add pic you took on iphone 
+
 
 ## References
 
