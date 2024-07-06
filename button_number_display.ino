@@ -18,6 +18,8 @@ MD_Parola myDisplay = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 int i = 0;
 int e = 0; // cycles elapsed since last light button press
 byte lightOn = false; //state of light
+int lBState = 0; //state of light button, 
+//0 = off, next press stays on; 1 = on, next press turns off & sets timed press; 2 = off, timer is set; 3 runs timed light and returns state to 0
 int potPin = A5;
 // Setup for software SPI:
 // #define DATAPIN 2
@@ -55,22 +57,30 @@ void loop() {
   else {
       Serial.println("Button is not pressed");
   }
-  if(lightState == LOW){ // if light button i spressed
-    lightOn = True; // turn on light varaible
-    digitalWrite(LASER_PIN, HIGH); // turn on light
+  if(lightButtonState == LOW){ // if light button i spressed
+    lBState++; //increment light button state
+    //0 = off, next press stays on; 1 = on, next press turns off & sets timed press; 2 = off, timer is set; 3 runs timed light and returns state to 0
+    if(lBState %2){
+       digitalWrite(LASER_PIN, HIGH); // turn off light
+        lightOn = true;
+        }else {
+         digitalWrite(LASER_PIN, LOW); // turn off light
+        lightOn = false;  
+      }
+    
 
   } else {
-    if(lightOn){
-      if(e == i){
-        digitalWrite(LASER_PIN, LOW);
-        lightOn = False;
-        e = 0; //reset cycles
+    if(lBState == 3){ // if timer is running
+      if(e == i){ // if timer cycle is over
+        digitalWrite(LASER_PIN, LOW); // turn off light
+        lightOn = false;
+          e = 0; //reset cycles
+        lBState = 0; //reset light button state
       } else {
         e++; 
-
-      }
-
+      } // if timer is not running, do nothing
     }
   }
 }
+
 
