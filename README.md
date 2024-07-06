@@ -17,9 +17,12 @@
 | Arduino | D3 | 8X8 | CD |
 | Arduino | D11 | 8X8 | DIN | 
 | Arduino | D13 | 8X8 | CLK |
-| Arduino | D12 | Button | Right |
-| Breadboard | Blue Rail | Button | Left |
-
+| Arduino | D12 | Display Button | Right |
+| Breadboard | Blue Rail | Display Button | Left |
+| Arduino | D4 | Laser | Voltage |
+| Breadboard | Blue Rail | Laser | Ground |
+| Breadboard | Blue Rail | Photo Button | Left | 
+| Arduino | D8 | Photo Button | Right |
 Connections in this iteration allow button to tick up number on display 0-9
 
 TODO: Add pic you took on iphone 
