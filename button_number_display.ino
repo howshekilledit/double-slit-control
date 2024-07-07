@@ -11,7 +11,7 @@
 #define CS_PIN 3 // pin that links to display
 #define BUTTON_PIN 12 // button that increases i
 #define PHOTO_BUTTON_PIN 8 //button that triggers timed light
-#define LASER_PIN 4 //pin connected to laser or test LED
+#define LASER_PIN 6 //pin connected to laser or test LED
 
 // Create a new instance of the MD_Parola class with hardware SPI connection:
 MD_Parola myDisplay = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
@@ -82,5 +82,6 @@ void loop() {
     }
   }
 }
+
 
 
