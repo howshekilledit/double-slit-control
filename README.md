@@ -14,12 +14,15 @@
 | Arduino | 5V | Breadboard | Red Rail |
 | Breadboard | Red Rail | 8x8 | VCC |
 | Breadboard | Blue Rail | 8X8 | gnd |
-| Arduino | D3 | 8X8 | CD |
+| Arduino | D3 | 8X8 | CS |
 | Arduino | D11 | 8X8 | DIN | 
 | Arduino | D13 | 8X8 | CLK |
 | Arduino | D12 | Display Button | Right |
 | Breadboard | Blue Rail | Display Button | Left |
-| Arduino | D4 | Laser | Voltage |
+| Arduino | D6 | 220 Ohm resistor | NA |
+| 220 Ohm Resistor | NA | PN222A Transistor | Base | 
+| Breadboard | Red Rail | PN222A Transistor | Collector | 
+| PN222A Transistor | Emitter | Laser | Voltage | 
 | Breadboard | Blue Rail | Laser | Ground |
 | Breadboard | Blue Rail | Photo Button | Left | 
 | Arduino | D8 | Photo Button | Right |
