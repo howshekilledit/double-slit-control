@@ -20,9 +20,9 @@
 | Arduino | D12 | Display Button | Right |
 | Breadboard | Blue Rail | Display Button | Left |
 | Arduino | D6 | 220 Ohm resistor | NA |
-| 220 Ohm Resistor | NA | PN222A Transistor | Base | 
-| Breadboard | Red Rail | PN222A Transistor | Collector | 
-| PN222A Transistor | Emitter | Laser | Voltage | 
+| 220 Ohm Resistor | NA | PN2222A Transistor | Base | 
+| Breadboard | Red Rail | PN2222A Transistor | Collector | 
+| PN2222A Transistor | Emitter | Laser | Voltage | 
 | Breadboard | Blue Rail | Laser | Ground |
 | Breadboard | Blue Rail | Photo Button | Left | 
 | Arduino | D8 | Photo Button | Right |
